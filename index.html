@@ -37,6 +37,7 @@
     --nav-bg:  rgba(245,246,248,0.92);
     --noise-opacity: 0.25;
     --edu-detail-color: #007a68;
+    --proj-desc-color: #6b7280;
   }
 
   @media(prefers-color-scheme: light) {
@@ -56,6 +57,7 @@
       --grid-color: rgba(0,168,150,0.04);
       --glow-color: rgba(0,168,150,0.07);
       --edu-detail-color: #007a68;
+      --proj-desc-color: #6b7280;
     }
   }
 
@@ -75,6 +77,7 @@
     --grid-color: rgba(0,168,150,0.04);
     --glow-color: rgba(0,168,150,0.07);
     --edu-detail-color: #007a68;
+    --proj-desc-color: #6b7280;
   }
 
   [data-theme="dark"] {
@@ -93,6 +96,7 @@
     --grid-color: rgba(0,229,200,0.028);
     --glow-color: rgba(0,229,200,0.055);
     --edu-detail-color: rgba(0,229,200,.55);
+    --proj-desc-color: #c4c9d4;
   }
   *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
   html { scroll-behavior: smooth; }
@@ -244,7 +248,7 @@
   .proj-card:hover::before { opacity:1; }
   .proj-num { font-family:'DM Mono',monospace; font-size:.62rem; color:var(--border-hi); letter-spacing:.2em; margin-bottom:1.1rem; }
   .proj-title { font-family:'Syne',sans-serif; font-size:1rem; font-weight:700; color:var(--text); margin-bottom:.7rem; line-height:1.3; }
-  .proj-desc { font-size:.82rem; color:var(--muted); line-height:1.75; flex:1; margin-bottom:1.4rem; }
+  .proj-desc { font-size:.82rem; color:var(--proj-desc-color); line-height:1.75; flex:1; margin-bottom:1.4rem; }
   .proj-tags { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:1.4rem; }
   .ptag { font-family:'DM Mono',monospace; font-size:.6rem; padding:.22rem .6rem; letter-spacing:.07em; }
   .ptag-py  { background:rgba(61,127,255,.1); color:#3d7fff; border:1px solid rgba(61,127,255,.22); }
@@ -281,7 +285,7 @@
   .c-link-icon { width:34px; height:34px; flex-shrink:0; background:rgba(0,229,200,.07); display:flex; align-items:center; justify-content:center; }
   .c-link-icon svg { width:16px; height:16px; }
   .c-link strong { display:block; font-size:.83rem; font-weight:500; color:var(--text); }
-  .c-link span { font-family:'DM Mono',monospace; font-size:.68rem; color:var(--muted); }
+  .c-link span { display:none; }
   @keyframes barUp { from{transform:scaleY(0);transform-origin:bottom} to{transform:scaleY(1)} }
   .bar:nth-child(1){height:38%;animation-delay:.1s}
   .bar:nth-child(2){height:62%;animation-delay:.18s}
@@ -377,7 +381,7 @@
       <p>I'm a <strong>Business Analyst and Data Analyst</strong> with over two years of experience across Tier-1 financial services and consulting environments. My work combines quantitative rigour with a practical understanding of how businesses operate &mdash; from fraud investigation at <strong>J.P. Morgan Chase</strong> to market intelligence pipelines and strategic consulting.</p>
       <p>A <strong>Durham Business School Scholarship</strong> recipient, I hold an MSc in Business Analytics from Durham University &mdash; complementing my hands-on commercial experience with a strong academic foundation in data science and quantitative methods.</p>
       <p>I thrive at the intersection of data and decision-making &mdash; translating messy, real-world datasets into clear recommendations that stakeholders can act on. Whether it's reducing fraud losses, mapping business processes with BPMN, or segmenting markets for entry strategy, I focus on insight that drives measurable outcomes.</p>
-      <p class="location-line"><strong>Sutton, Greater London, UK</strong></p>
+      
     </div>
     <div class="about-facts">
       <div class="fact-row">
