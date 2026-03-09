@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Amrit Sharma · Business Analyst</title>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-<style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
   :root {
     --bg:     #07080a;
     --bg2:    #0d0f13;
@@ -103,7 +103,7 @@
   body {
     background: var(--bg);
     color: var(--text);
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 300;
     overflow-x: hidden;
     line-height: 1.6;
@@ -174,7 +174,7 @@
   .hero-left { flex:1; }
   .hero-eyebrow { display:inline-flex; align-items:center; gap:.6rem; font-family:'DM Mono',monospace; font-size:.68rem; color:var(--accent); letter-spacing:.22em; text-transform:uppercase; margin-bottom:1.8rem; opacity:0; animation:fadeUp .6s ease .15s forwards; }
   .hero-eyebrow::before { content:''; display:block; width:2rem; height:1px; background:var(--accent); }
-  .hero-name { font-family:'Archivo Black',sans-serif; font-size:clamp(3.2rem,7vw,6.4rem); font-weight:400; line-height:.96; letter-spacing:-.025em; margin-bottom:.6rem; opacity:0; animation:fadeUp .7s ease .3s forwards; }
+  .font-family:'Inter',sans-serif;  font-weight:800; font-size:clamp(3.2rem,7vw,6.4rem); font-weight:400; line-height:.96; letter-spacing:-.025em; margin-bottom:.6rem; opacity:0; animation:fadeUp .7s ease .3s forwards; }
   .hero-name .grad { background:linear-gradient(130deg, var(--accent) 0%, var(--accent2) 65%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
   .hero-role { font-family:'DM Mono',monospace; font-size:.78rem; color:var(--muted); letter-spacing:.18em; text-transform:uppercase; margin-bottom:2rem; opacity:0; animation:fadeUp .7s ease .45s forwards; }
   .hero-desc { font-size:.97rem; color:var(--dim); line-height:1.9; max-width:530px; margin-bottom:2.8rem; opacity:0; animation:fadeUp .7s ease .6s forwards; }
@@ -190,7 +190,7 @@
   .hero-stats { display:flex; flex-direction:column; gap:1.2rem; flex-shrink:0; opacity:0; animation:fadeLeft .9s ease 1s forwards; }
   .stat-card { background:var(--bg2); border:1px solid var(--border); padding:1.3rem 1.8rem; text-align:right; position:relative; min-width:165px; }
   .stat-card::before { content:''; position:absolute; top:0; right:0; width:3px; height:100%; background:var(--accent); }
-  .stat-num { font-family:'Syne',sans-serif; font-size:1.9rem; font-weight:700; color:var(--accent); line-height:1; margin-bottom:.2rem; }
+  .stat-num { font-family:'Inter',sans-serif; font-size:1.9rem; font-weight:700; color:var(--accent); line-height:1; margin-bottom:.2rem; }
   .stat-lbl { font-family:'DM Mono',monospace; font-size:.62rem; color:var(--muted); letter-spacing:.1em; text-transform:uppercase; }
 
   /* SECTIONS */
@@ -199,7 +199,7 @@
   section { padding:6rem 4rem; max-width:1200px; margin:0 auto; }
   .sec-head { display:flex; align-items:center; gap:1.4rem; margin-bottom:3.8rem; }
   .sec-num { font-family:'DM Mono',monospace; font-size:.68rem; color:var(--accent); letter-spacing:.15em; }
-  .sec-title { font-family:'Archivo Black',sans-serif; font-size:clamp(1.7rem,2.8vw,2.3rem); font-weight:400; letter-spacing:-.015em; }
+  .sec-title { font-family:'Inter',sans-serif; font-size:clamp(1.7rem,2.8vw,2.3rem); font-weight:400; letter-spacing:-.015em; }
   .sec-line { flex:1; height:1px; background:var(--border); }
 
   /* ABOUT */
@@ -221,7 +221,7 @@
   .skill-cat:hover { border-color:var(--accent); transform:translateY(-3px); }
   .skill-cat::after { content:''; position:absolute; bottom:0; left:0; right:0; height:2px; background:linear-gradient(90deg,var(--accent),var(--accent2)); transform:scaleX(0); transition:transform .3s; transform-origin:left; }
   .skill-cat:hover::after { transform:scaleX(1); }
-  .skill-cat-title { font-family:'Syne',sans-serif; font-size:.88rem; font-weight:600; color:var(--text); margin-bottom:1.1rem; padding-bottom:.7rem; border-bottom:1px solid var(--border); }
+  .skill-cat-title { font-family:'Inter',sans-serif; font-size:.88rem; font-weight:600; color:var(--text); margin-bottom:1.1rem; padding-bottom:.7rem; border-bottom:1px solid var(--border); }
   .tags { display:flex; flex-wrap:wrap; gap:.45rem; }
   .tag { font-family:'DM Mono',monospace; font-size:.63rem; color:var(--muted); background:var(--bg3); border:1px solid var(--border); padding:.28rem .65rem; letter-spacing:.04em; transition:all .18s; cursor:default; }
   .tag:hover { background:rgba(0,229,200,.08); border-color:var(--accent); color:var(--accent); }
@@ -233,7 +233,7 @@
   .t-item:last-child { padding-bottom:0; }
   .t-item::before { content:''; position:absolute; left:-2rem; top:.38rem; width:7px; height:7px; background:var(--accent); box-shadow:0 0 12px var(--accent); transform:rotate(45deg); }
   .t-date { font-family:'DM Mono',monospace; font-size:.75rem; color:var(--accent); letter-spacing:.15em; margin-bottom:.4rem; }
-  .t-role { font-family:'Syne',sans-serif; font-size:1.08rem; font-weight:600; color:var(--text); margin-bottom:.15rem; }
+  .t-role { font-family:'Inter',sans-serif; font-size:1.08rem; font-weight:600; color:var(--text); margin-bottom:.15rem; }
   .t-company { font-size:.83rem; color:var(--muted); margin-bottom:.9rem; font-style:italic; }
   .t-bullets { list-style:none; }
   .t-bullets li { font-size:.85rem; color:var(--dim); line-height:1.8; padding-left:1.1rem; position:relative; margin-bottom:.35rem; max-width:680px; }
@@ -247,7 +247,7 @@
   .proj-card::before { content:''; position:absolute; top:0; left:0; right:0; height:1px; background:linear-gradient(90deg,transparent,var(--accent),transparent); opacity:0; transition:opacity .3s; }
   .proj-card:hover::before { opacity:1; }
   .proj-num { font-family:'DM Mono',monospace; font-size:.62rem; color:var(--border-hi); letter-spacing:.2em; margin-bottom:1.1rem; }
-  .proj-title { font-family:'Syne',sans-serif; font-size:1rem; font-weight:700; color:var(--text); margin-bottom:.7rem; line-height:1.3; }
+  .proj-title { font-family:'Inter',sans-serif; font-size:1rem; font-weight:700; color:var(--text); margin-bottom:.7rem; line-height:1.3; }
   .proj-desc { font-size:.82rem; color:var(--proj-desc-color); line-height:1.75; flex:1; margin-bottom:1.4rem; }
   .proj-tags { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:1.4rem; }
   .ptag { font-family:'DM Mono',monospace; font-size:.6rem; padding:.22rem .6rem; letter-spacing:.07em; }
@@ -265,7 +265,7 @@
   .edu-card:hover { border-color:var(--accent2); }
   .edu-card::before { content:''; position:absolute; top:0; left:0; width:3px; height:100%; background:var(--accent2); }
   .edu-year { font-family:'DM Mono',monospace; font-size:.65rem; color:var(--accent2); letter-spacing:.15em; margin-bottom:.5rem; }
-  .edu-degree { font-family:'Syne',sans-serif; font-size:1.02rem; font-weight:600; color:var(--text); margin-bottom:.25rem; line-height:1.3; }
+  .edu-degree { font-family:'Inter',sans-serif; font-size:1.02rem; font-weight:600; color:var(--text); margin-bottom:.25rem; line-height:1.3; }
   .edu-school { font-size:.83rem; color:var(--muted); margin-bottom:.7rem; font-style:italic; }
   .edu-detail { font-family:'DM Mono',monospace; font-size:.68rem; color:var(--edu-detail-color); line-height:1.6; }
   .certs-list { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:1.5rem; }
@@ -276,7 +276,7 @@
 
   /* CONTACT */
   .contact-wrap { display:grid; grid-template-columns:1fr; gap:2rem; align-items:center; max-width:680px; }
-  .contact-heading { font-family:'Archivo Black',sans-serif; font-size:clamp(2rem,3.5vw,3rem); font-weight:400; line-height:1.08; letter-spacing:-.02em; margin-bottom:1rem; }
+  .contact-heading { font-family:'Inter',sans-serif; font-size:clamp(2rem,3.5vw,3rem); font-weight:400; line-height:1.08; letter-spacing:-.02em; margin-bottom:1rem; }
   .contact-heading span { background:linear-gradient(130deg,var(--accent),var(--accent2)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
   .contact-sub { font-size:.9rem; color:var(--muted); line-height:1.85; margin-bottom:2rem; }
   .contact-links { display:flex; flex-direction:column; gap:.85rem; }
