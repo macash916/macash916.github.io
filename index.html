@@ -708,28 +708,29 @@
   if (heroStats) statObserver.observe(heroStats);
 
   // ── THEME TOGGLE ──
-  (function() {
-    const root = document.documentElement;
-    const btn = document.getElementById('themeToggle');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const saved = localStorage.getItem('theme');
-    if (saved) {
-      root.setAttribute('data-theme', saved);
-    } else {
-      root.setAttribute('data-theme', prefersDark.matches ? 'dark' : 'light');
-    }
-    btn.addEventListener('click', function() {
-      const current = root.getAttribute('data-theme');
-      const next = current === 'dark' ? 'light' : 'dark';
-      root.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
-    });
-    prefersDark.addEventListener('change', function(e) {
-      if (!localStorage.getItem('theme')) {
-        root.setAttribute('data-theme', e.matches ? 'dark' : 'light');
-      }
-    });
-  })();
+(function() {
+  const root = document.documentElement;
+  const btn = document.getElementById('themeToggle');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+  // On load — always follow device theme, ignore any saved preference
+  root.setAttribute('data-theme', prefersDark.matches ? 'dark' : 'light');
+
+  // Manual toggle — saves override to localStorage
+  btn.addEventListener('click', function() {
+    const current = root.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  });
+
+  // Device theme change — always overrides manual toggle
+  prefersDark.addEventListener('change', function(e) {
+    const newTheme = e.matches ? 'dark' : 'light';
+    root.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  });
+})();
 </script>
 </body>
 </html>
