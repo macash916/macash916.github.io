@@ -258,7 +258,20 @@
   .proj-link:hover { color:var(--accent); }
   .proj-link svg { transition:transform .2s; }
   .proj-link:hover svg { transform:translate(3px,-3px); }
+  .proj-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: auto;
+}
 
+.proj-link--secondary {
+  opacity: 0.75;
+}
+
+.proj-link--secondary:hover {
+  opacity: 1;
+}
   /* EDUCATION */
   .edu-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1.4rem; }
   .edu-card { background:var(--bg); border:1px solid var(--border); padding:2rem; position:relative; overflow:hidden; transition:border-color .25s; }
@@ -442,7 +455,7 @@
       </div>
       <div class="fact-row">
         <div class="fact-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
-        <div class="fact-body"><strong>Stakeholder Engagement</strong><span>Customer Excellence Award &middot; Global Stakeholders &middot; Consulting</span></div>
+        <div class="fact-body"><strong>Stakeholder Engagement</strong><span>Customer Excellence Award (2023) &middot; J.P. Morgan &middot; Global Teams</span></div>
       </div>
       <div class="fact-row">
         <div class="fact-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
@@ -450,8 +463,7 @@
       </div>
       <div class="fact-row">
         <div class="fact-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
-        <div class="fact-body"><strong>Strategy Consulting</strong><span>180 Degrees Consulting &middot; Outreach Funnels &middot; Investment Analysis</span></div>
-      </div>
+        <div class="fact-body"><strong>Strategy Consulting</strong><span>200+ Leads Vetted &middot; BPMN Workflows &middot; 180 Degrees Consulting</span></div>      </div>
     </div>
   </div>
 </section>
@@ -544,21 +556,30 @@
       <div class="proj-title">Customer Lifecycle Campaign Analysis</div>
       <p class="proj-desc">End-to-end customer analytics on 1M+ UK e-commerce transactions. RFM segmentation, churn prediction, CLV modelling and campaign attribution &mdash; outputting a &pound;12,500/month Google Ads + Klaviyo strategy.</p>
       <div class="proj-tags"><span class="ptag ptag-py">Python</span><span class="ptag ptag-ml">Machine Learning</span><span class="ptag ptag-an">CLV</span><span class="ptag ptag-an">RFM</span></div>
-      <a href="https://github.com/macash916/Customer-Lifecycle-Campaign-Analysis" target="_blank" class="proj-link">View on GitHub <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
+<div class="proj-links">
+  <a href="https://github.com/macash916/Customer-Lifecycle-Campaign-Analysis" target="_blank" class="proj-link">View on GitHub <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"></path></svg></a>
+  <a href="https://macash916.github.io/assets/Customer_Lifecycle_Final.pdf" target="_blank" class="proj-link proj-link--secondary">View Presentation <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"></path></svg></a>
+</div>
     </div>
     <div class="proj-card">
       <div class="proj-num">PROJECT &middot; 02</div>
       <div class="proj-title">IMADATA Market Intelligence &amp; Competitor Analytics</div>
       <p class="proj-desc">Analysed 40k+ business records using Python to identify structural patterns in customer and competitor data. Segmented organisations into actionable profiles via clustering, with multi-year trend analysis to surface high-growth regions and strategic expansion opportunities.</p>
       <div class="proj-tags"><span class="ptag ptag-py">Python</span><span class="ptag ptag-ml">Clustering</span><span class="ptag ptag-an">Market Intelligence</span><span class="ptag ptag-an">Geospatial</span></div>
-      <a href="https://github.com/macash916/IMADATA-Market-Intelligence" target="_blank" class="proj-link">View on GitHub <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
+<div class="proj-links">
+  <a href="https://github.com/macash916/IMADATA-Market-Intelligence" target="_blank" class="proj-link">View on GitHub <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"></path></svg></a>
+  <a href="https://imadata-market-intelligence.streamlit.app" target="_blank" class="proj-link proj-link--secondary">Launch Live Dashboard <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"></path></svg></a>
+</div>
     </div>
     <div class="proj-card">
       <div class="proj-num">PROJECT &middot; 03</div>
       <div class="proj-title">JPMorgan Quantitative Research</div>
       <p class="proj-desc">Quantitative research suite covering commodity forecasting, contract pricing, credit risk ML, and optimisation algorithms. Completed as part of JPMorgan's virtual Quantitative Research programme.</p>
       <div class="proj-tags"><span class="ptag ptag-py">Python</span><span class="ptag ptag-ml">Quant Finance</span><span class="ptag ptag-an">Credit Risk</span><span class="ptag ptag-an">Forecasting</span></div>
-      <a href="https://github.com/macash916/JPMorgan-Quantitative-Research" target="_blank" class="proj-link">View on GitHub <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
+<div class="proj-links">
+  <a href="https://github.com/macash916/JPMorgan-Quantitative-Research" target="_blank" class="proj-link">View on GitHub <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"></path></svg></a>
+  <a href="https://macash916.github.io/assets/JPMorgan_QR_Project_Analysis.pdf" target="_blank" class="proj-link proj-link--secondary">View Research Report <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"></path></svg></a>
+</div>
     </div>
     <div class="proj-card">
       <div class="proj-num">PROJECT &middot; 04</div>
@@ -592,7 +613,10 @@
   <div style="margin-top:2.8rem">
     <div style="font-family:'DM Mono',monospace;font-size:.67rem;color:var(--muted);letter-spacing:.15em;text-transform:uppercase;margin-bottom:1.2rem;">Certifications</div>
     <div class="certs-list">
-      <div class="cert-item"><div class="cert-name">Security, Compliance &amp; Identity</div><div class="cert-issuer">Microsoft &nbsp;&middot;&nbsp; In Progress</div></div>
+<div class="cert-item">
+  <div class="cert-name">Quantitative Research Job Simulation</div>
+  <div class="cert-issuer">JPMorgan Chase &nbsp;&middot;&nbsp; Forage</div>
+</div>
       <div class="cert-item"><div class="cert-name">Google Analytics Professional Certification</div></div>
       <div class="cert-item"><div class="cert-name">Google — Ads, Search, Display, Measurement &amp; Apps</div></div>
     </div>
@@ -607,7 +631,7 @@
   <div class="contact-wrap reveal-scale reveal">
     <div>
       <h3 class="contact-heading">Let's work<br><span>together.</span></h3>
-      <p class="contact-sub">Open to Business Analyst and Data Analyst roles in London and beyond. Also available for freelance analytics and consulting projects. Legally authorised to work in the UK.</p>
+      <p class="contact-sub">Open to Data Analyst and Business Analyst roles in London and beyond. Also available for freelance analytics and consulting projects. Legally authorised to work in the UK.</p>
       <div class="contact-links">
         <a href="mailto:amritmail2012@gmail.com" class="c-link">
           <div class="c-link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
