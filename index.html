@@ -364,15 +364,47 @@
     margin-top:.18rem;
     display:block;
   }
-
   /* RESPONSIVE */
-  @media(max-width:1000px){
-    nav{padding:1rem 1.5rem} #hero{padding:8rem 1.5rem 4rem} .hero-stats{display:none}
-    section{padding:4rem 1.5rem} .about-grid,.contact-wrap{grid-template-columns:1fr;gap:2.5rem}
-    .skills-grid,.certs-list{grid-template-columns:1fr 1fr} .projects-grid,.edu-grid{grid-template-columns:1fr}
-    footer{padding:1.5rem;flex-direction:column;gap:.5rem;text-align:center}
+@media(max-width:1000px){
+  nav{padding:1rem 1.5rem}
+  #hero{padding:8rem 1.5rem 4rem}
+  section{padding:4rem 1.5rem}
+  .about-grid,.contact-wrap{grid-template-columns:1fr;gap:2.5rem}
+  .skills-grid,.certs-list{grid-template-columns:1fr 1fr}
+  .projects-grid,.edu-grid{grid-template-columns:1fr}
+  footer{padding:1.5rem;flex-direction:column;gap:.5rem;text-align:center}
+  .hero-stats{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;gap:0.75rem;margin-top:1.5rem}
+}
+
+@media(max-width:600px){
+  .nav-links{display:none}
+  .skills-grid,.projects-grid,.certs-list{grid-template-columns:1fr}
+
+  .hero-inner{flex-direction:column;align-items:center;text-align:center;gap:1.5rem}
+  .hero-photo{
+    width:130px !important;
+    height:130px !important;
+    margin-top:0 !important;
+    margin-right:0 !important;
+    align-self:center !important;
+    order:-1;
   }
-  @media(max-width:600px){ .nav-links{display:none} .skills-grid,.projects-grid,.certs-list{grid-template-columns:1fr} }
+  .hero-left{order:1;width:100%}
+  .hero-cta{justify-content:center}
+  .hero-badges{justify-content:center}
+  .hero-desc{max-width:100%}
+
+  .hero-stats{
+    display:flex !important;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:0.6rem;
+    margin-top:1.5rem;
+    padding:0 1rem;
+  }
+  .stat-card{flex:1 1 130px;min-width:120px}
+}
 </style>
 </head>
 <body>
@@ -421,7 +453,7 @@
         <a href="#contact" class="btn-outline">Get in Touch</a>
       </div>
     </div>
-    <img src="assets/headshot.jpg" alt="Amrit Sharma"
+  <img src="assets/headshot.jpg" alt="Amrit Sharma" class="hero-photo"
      style="width:280px;height:280px;aspect-ratio:1/1;border-radius:50%;object-fit:cover;object-position:center top;border:2px solid var(--accent);flex-shrink:0;align-self:flex-start;margin-top:-4rem;margin-right:6rem;opacity:0;animation:fadeLeft .9s ease .6s forwards;">
     </div>
     <div class="hero-stats">
