@@ -404,6 +404,9 @@
     padding:0 1rem;
   }
   .stat-card{flex:1 1 130px;min-width:120px}
+
+  .hero-wrap{display:flex;flex-direction:column;align-items:center;width:100%}
+  .hero-stats{position:static;width:100%;padding:0 1.5rem 2rem}
 }
 </style>
 </head>
@@ -429,6 +432,7 @@
 
 <!-- HERO -->
 <section id="hero">
+  <div class="hero-wrap">
   <div class="hero-inner">
     <div class="hero-left">
       <h1 class="hero-name">Amrit<br><span class="grad">Sharma</span></h1>
@@ -456,7 +460,8 @@
   <img src="assets/headshot.jpg" alt="Amrit Sharma" class="hero-photo"
      style="width:280px;height:280px;aspect-ratio:1/1;border-radius:50%;object-fit:cover;object-position:center top;border:2px solid var(--accent);flex-shrink:0;align-self:flex-start;margin-top:-4rem;margin-right:6rem;opacity:0;animation:fadeLeft .9s ease .6s forwards;">
     </div>
-    <div class="hero-stats">
+  </div>
+  <div class="hero-stats">
       <div class="stat-card"><div class="stat-num">$1M+</div><div class="stat-lbl">Fraud Prevented (Q)</div></div>
       <div class="stat-card"><div class="stat-num">60%</div><div class="stat-lbl">Turnaround Reduction</div></div>
       <div class="stat-card"><div class="stat-num">40k+</div><div class="stat-lbl">Records Analysed</div></div>
